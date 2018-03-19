@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>珠峰培训-3D魔方</title>
+    <link rel="stylesheet" href="css/index.min.css">
+    <!--REM-->
+    <script>
+        ~function () {
+            let computed = function () {
+                let desW = 640;
+                let devW = document.documentElement.clientWidth;
+                if (devW >= 640) {
+                    document.documentElement.style.fontSize = '100px';
+                    return;
+                }
+                document.documentElement.style.fontSize = devW / desW * 100 + 'px';
+            };
+            computed();
+            window.addEventListener('resize', computed, false);
+        }();
+    </script>
+</head>
+<body>
+<main class="mainBox">
+    <section class="cubeBox">
+        <ul class="box">
+            <li><img src="img/zf_cube1.png" alt=""></li>
+            <li><img src="img/zf_cube2.png" alt=""></li>
+            <li><img src="img/zf_cube3.png" alt=""></li>
+            <li><img src="img/zf_cube4.png" alt=""></li>
+            <li><img src="img/zf_cube5.png" alt=""></li>
+            <li><img src="img/zf_cube6.png" alt=""></li>
+        </ul>
+        <img src="img/zf_cubeTip.png" alt="" class="tip">
+    </section>
+</main>
+
+<!--IMPORT JS-->
+<script src="js/zepto.min.js"></script>
+<script src="js/prefixfree.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
